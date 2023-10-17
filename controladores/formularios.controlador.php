@@ -2,7 +2,7 @@
 class ControladorFormularios
 {
     /*
-    REGISTRO
+    REGISTRATE
     */
     static public function crtRegistro()
     {
@@ -20,7 +20,7 @@ class ControladorFormularios
         }
     }
     /**
-     * Selecion de registros de la tabla
+     * Selecion De Registros
      */
     static public function ctrSeleccionarRegistros($item, $valor)
     {
@@ -40,7 +40,7 @@ class ControladorFormularios
 
     }
     /**
-     * Ingreso
+     * Ingresate
      */
     public function ctrIngreso()
     {
@@ -56,7 +56,7 @@ class ControladorFormularios
 
                     $_SESSION["validarIngreso"] = "ok";
 
-                    echo "Ingreso Exitoso";
+                    echo "fuistes ingresado";
 
                     echo '<script>
                         if (window.history.replaceState){
@@ -72,7 +72,7 @@ class ControladorFormularios
                             window.history.replaceState(null, null, window.location.href);
                         }
                     </script>';
-                    echo '<div class="alert alert-danger">Error al ingresar al sistema</div>';
+                    echo '<div class="alert alert-danger">Error al entrar en el sistema</div>';
                 }
             } else {
                 echo '<script>
@@ -80,7 +80,7 @@ class ControladorFormularios
                         window.history.replaceState(null, null, window.location.href);
                     }
                 </script>';
-                echo '<div class="alert alert-danger">Error en el sistema ';
+                echo '<div class="alert alert-danger">Error en este sistema ';
             }
         }
 
@@ -129,7 +129,7 @@ class ControladorFormularios
                     window.history.replaceState(null, null, window.location.href);
                 }
                 </script>    ';
-                echo '<div class="alert-success"> El usuario ha sido Eliminado</div>
+                echo '<div class="alert-success"> El usuario esta Eliminado</div>
                     <script>
                     setTimeout(function(){
                     window.location = "index.php?pagina=inicio";
